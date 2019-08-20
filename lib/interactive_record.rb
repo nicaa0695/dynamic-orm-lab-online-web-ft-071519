@@ -2,7 +2,7 @@ require_relative "../config/environment.rb"
 require 'active_support/inflector'
 
 class InteractiveRecord
-  def self.table_name 
+  def table_name 
     sql = <<-SQL 
     CREATE TABLE IF NOT EXISTS students(
     id INTEGER PRIMARY KEY,
